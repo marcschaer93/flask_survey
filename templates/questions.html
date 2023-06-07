@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<div class="flex-container questions">
+  <h1>{{ question.question }}</h1>
+  <form action="/answer" method="post">
+    {% for choice in question.choices %}
+    <div class="choices">
+      <p class="choice"><input type="radio" name="answer" value="{{ choice }}" required> {{ choice }}</p>
+    </div>
+    {% endfor %}
+    </select>
+    <button class="button">Continue</button>
+  </form>
+</div>
+
+{% endblock %}

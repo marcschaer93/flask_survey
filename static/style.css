@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+.flex-container {
+  display: flex;
+  border: 1px solid black;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  height: 60vh;
+  width: 80%;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.flex-container h1 {
+  font-size: 2rem;
+  padding: 15px;
+}
+
+.button {
+  margin-top: 50px;
+}
+
+.choices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.choice {
+  display: inline-block;
+  margin-right: 10px;
+}
+

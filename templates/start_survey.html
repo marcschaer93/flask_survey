@@ -1,0 +1,16 @@
+{%extends 'base.html'%} 
+
+{%block title%}Home{%endblock%} 
+
+{%block content%}
+
+<div class="flex-container">
+  <h1>{{survey.title}}</h1>
+  <p>{{survey.instructions}}</p>
+  <form action="/start" method="post">
+    <button class="button">Start!</button>
+  </form>
+</div>
+
+
+{%endblock%}
